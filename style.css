@@ -1,0 +1,411 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body{
+    overflow-x: hidden;
+    background-color: whitesmoke;
+}
+
+#upper-bar a,span{
+    color:black;
+}
+#contact-opt{   
+    background-color: hsl(191, 57%, 42%);
+}
+         
+            
+.h-icons a{     
+    text-decoration: none;
+    color:black;
+}               
+.h-icons a:hover{
+    text-decoration: underline;
+}                
+#icon-mail::before{
+    content:url("https://img.icons8.com/material-outlined/20/null/filled-message.png");
+   display: inline-block; 
+}           
+#icon-phone::before{
+    content: url("https://img.icons8.com/material-outlined/20/null/iphone--v1.png");
+    display: inline-block;
+}
+#nav{
+    background-color: white;
+}
+#nav .container-fluid{
+    padding:15px;
+    box-shadow: 0px 0px 0px grey;
+    transition: padding 500ms, box-shadow 500ms;
+}      
+#navbar ul li{
+    margin-right: 15px;
+}
+#navbar ul li a{
+    color:black;
+    font-weight:500;
+}
+#navbar ul li::after{
+    content: "";
+    background-color: rgb(34, 0, 255);
+    display: block;
+    height: 2px;
+    width: 0%;
+    transition: width 500ms;
+} 
+#navbar ul li a:hover{
+    color:blue;
+} 
+
+#navbar ul li:hover::after{
+    width:100%;
+}
+.co-name{      
+    font-family: monospace;
+    font-weight: bold;
+}                
+.co-name::after{
+    content: ".";
+    color:blue;
+}                   
+
+#banner a{
+    text-decoration: none;
+}
+#banner{
+    font-size: 1.5rem;
+    height: 500px;
+    background-image: url('starting_banner.jpg');
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-attachment: fixed
+}
+
+
+#main .fs{
+ padding:20px;  
+ background-color: white;
+border-radius: 10px;
+position: relative;
+z-index: 1;
+overflow: hidden;
+cursor: pointer;
+height: 250px;
+
+}
+#main .fs h3{
+    color:rgb(0, 91, 56);
+    font-family: 'Righteous', cursive;
+}
+.br{
+    border:1px solid black;
+}
+
+#service-1::before{
+    content: url('https://img.icons8.com/external-filled-line-andi-nur-abdillah/50/null/external-Ball-football-(filled-line)-filled-line-andi-nur-abdillah.png');
+}
+
+#service-2::before{
+    content: url('https://img.icons8.com/doodle/50/null/maintenance.png');
+}
+
+#service-3::before{
+    content:url('https://img.icons8.com/color/50/null/speedometer.png');
+}
+#service-4::before{
+    content: url('https://img.icons8.com/external-dreamstale-green-shadow-dreamstale/50/null/external-plate-food-and-drinks-dreamstale-green-shadow-dreamstale.png');
+}
+.service{
+    transition:color 1s;
+}
+.service::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgb(0, 110, 255);
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    left:0;
+    right: 0;
+    top:100%;
+    opacity: 0.3;
+    transition: top 500ms, opacity 700ms;
+    z-index: -1;
+
+}
+.service:hover::after{
+top:0;
+opacity: 1;
+}
+.service:hover{
+    color:white;
+}
+
+#about h4{
+    font-family: 'Righteous', cursive;
+}
+.heading{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.heading span{
+    color:rgb(163, 143, 13);
+}
+.prog-parent{
+    font-weight: bold;
+}
+.container-name{
+    background-color: #fffdfd;
+    padding:10px 25px;
+    border-radius: 50%;
+    font-weight: bold;
+    color:rgba(30, 82, 253, 0.863);
+    box-shadow: 0px 0px 5px grey;
+}
+
+.bi{
+    position: relative;
+    top:-20px;
+}
+.bi-emoji-smile{
+    color:white;
+    border-radius: 50%;
+}
+.bi-journal-code{
+    color:white;
+
+}
+.bi-people{
+    color:white;
+    border-radius: 50%;
+}
+.bi-headset{
+    color:white;
+}
+
+.achiv{
+    background-color: rgb(187, 187, 187);
+}
+.achiv span{
+    font-size: large;
+}
+.achiv p{
+    font-family: monospace;
+    font-weight: 200;
+}
+.partnr{
+    
+   background-color: rgb(238, 240, 238);
+}
+.inner-content h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.service-card{
+    height:30vh;
+    border:0.5px solid greenyellow;
+    margin:1px;
+    border-radius: 20px;
+}
+.image-box{
+    position: relative;
+    top:30px;
+    background-color: lightgreen;
+    border: 0.1px solid green;
+
+}
+.service-card:hover{
+    border:1px solid green;
+  
+}
+.service-card:hover .image-box{
+    border:2px solid rgb(0, 73, 128);
+}
+.service-card:hover .service-card-h{
+    color:green;
+}
+.carousel-inner{
+    height: 30vh;
+    border: 1px solid black;
+    position: relative;
+    z-index: 1;
+    color:white;
+}
+.carousel-inner::before{
+    content:url('testimonials-bg.jpg');
+    position:absolute;
+    top:-500px;
+    z-index:-2;
+}
+.carousel-inner::after{
+    content: " ";
+    display: inline-block;
+    position:absolute;
+    background-color: rgba(0, 0, 0, 0.569);
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    z-index: -1;
+}
+.test-min{
+    border-radius: 50%;
+    height: 40%;
+    width: 40%;
+    position: relative;
+    border:5px outset rgb(221, 212, 212);
+}
+.sr-only{
+    color:white;
+    font-weight: bolder;
+}
+.team-card{
+    background-color: rgb(253, 255, 255);
+    padding:10px 0px 0px 10px;
+    font-family: monospace;
+    box-shadow: 0px 5px 10px rgb(0, 195, 255);
+}
+
+.team-card h4{
+    font-weight: bold;
+    font-size: 1rem;
+}
+.team-img-box{
+    position: relative;
+}
+.parnt-social{
+ position: absolute;
+ left:0;
+ right: 0;
+ bottom:80px;
+ opacity: 0;
+ transition: opacity 500ms, bottom 500ms;
+}
+.team-img-box:hover .parnt-social{
+    opacity: 1;
+    bottom:10px;
+}
+.parnt-social a{
+    text-decoration: none;
+}
+.team-social{
+    font-size:28px;
+    color:rgb(55, 123, 250);
+}
+
+.pack{
+    background-color: rgb(255, 241, 241);
+    box-shadow: 0px 2px 10px grey;
+}
+
+.pack-upper{
+    background-color: rgb(197, 204, 118);
+    padding:20px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    opacity: 0.6;
+}
+
+.pack-price sup{
+    opacity: 1;
+    color:rgb(13,110,253);
+}
+.pack-price span{
+    opacity: 1;
+    font-size: 2rem;
+    color:rgb(13,110,253);
+}
+.pack-price b{
+    opacity: 0.5;
+    font-weight: 500;
+}
+.pack-body{
+    opacity: 0.7;
+}
+.pack-buy{
+    background-color:  rgba(197, 204, 118, 0.749);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    padding-bottom: 15px;
+}
+#side-strip-p{
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+#side-strip-p::after{
+    content: " LIMITED TIME OFFER";
+    background-color:rgb(152, 25, 27);
+    display: inline-block;
+    position: absolute;
+    font-size: 0.5rem;
+    top:10;
+    right: -35%;
+    padding:5px;
+    width: 100%;
+    text-align: center;
+    transform: rotate(45deg);
+    color:white;
+    z-index: 1;
+}
+#accordion{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.que{
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(213, 235, 227);
+    padding:15px;
+    color:blue;
+}
+.ans{
+    text-align: center;
+    background-color: antiquewhite;
+}
+.faq-qna{
+    border:none;
+}
+
+.contact{
+    height: 20vh;
+}
+.contact p{
+    font-weight: bold;
+}
+.contact-card{
+    background-color: rgb(206, 214, 221);
+}
+
+.contact-icon{
+    font-size: 30px;
+    color:rgb(13,110,253);
+}
+form input,form textarea{
+    border: 1px solid grey;
+    background-color: whitesmoke;
+}
+footer ul li{
+    padding-top: 5px;
+    cursor: pointer;
+}
+footer ul li:hover{
+    color:blue;
+    text-decoration:underline;
+}
+.social-icons{
+    padding-top: 10px;
+}
+.social-icons a{
+    margin-right: 5px;
+}
+footer{
+    background-color: white;
+    border-top:1px solid rgba(128, 128, 128, 0.268);
+}
+#footer-bottom{
+    background-color: rgb(206, 214, 221);
+}
